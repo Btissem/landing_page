@@ -89,6 +89,41 @@ hr {
     margin-top: 3px;
     margin-bottom: 3px;
  }
+ /*section 3*/
+ .blocaligner {
+    width: 50%;	
+}
+.conteneur {
+	width: 50%;	
+	display: flex;
+	flex-wrap: wrap;   
+}
+.photo:hover {
+	opacity: 0.5;
+}
+.police2 {
+	font-family: 'Playfair Display',serif;
+	font-size: 40px;
+	line-height: 45px;
+	width: 50%;
+	margin-top: 90px;
+	margin-left: 60px;
+	margin-bottom: 0;
+}
+.police3{
+	font-family: 'Playfair Display',serif;
+	margin-top: 0;
+	font-size: 17px;
+	padding-top: 6px;
+	padding-bottom: 20px;
+	margin-left: 60px;
+}
+.text3{
+	width: 73%;
+	margin-left: 60px;
+	margin-bottom: 0;
+	line-height: 25px;
+}
 /* footer */
 #footer {
 	display: flex;
