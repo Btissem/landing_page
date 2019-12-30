@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<title>BMW: MCAR MC-I</title>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<meta name="description" content="Nouveau MCAR MC-I crossover. Affrontez tous les obstacles avec élégance. Réservez votre essai gratuit!"/>
 		<link rel="stylesheet" href="style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet"/>
 	</head>
 	<body>
 		<header>
-			<img class="logo1" src="images/header_logo1.jpeg" alt="logo of MCAR/ logo de MCAR"/>		
-			<p>Affrontez tous les obstacles avec élégance</p>
-			<h1>Nouveau MCAR MC-I crossover</h1>
 			<div class="header_logo2">
-				<a href="#section4">
-					<img src="images/header_logo2.jpeg" alt="logo-decoration: steering wheel/ logo-décoration: volant"/>
+				<a href="#section4" title="demander un essai">
+					<img src="images/header_logo2.jpeg" alt="logo-décoration: volant"/>
 					<span>Demander un Essai</span>
 				</a>	
 			</div>	
+			<img class="logo1" src="images/header_logo1.jpeg" alt="logo de MCAR"/>		
+			<p>Affrontez tous les obstacles avec élégance</p>
+			<h1>Nouveau MCAR MC-I crossover</h1>
 		</header>
 		<section> 
 			<div class="section1">
-				<p class="title1">VISIONNAIRE SOUS TOUS LES ANGLES</p>
+				<h2>VISIONNAIRE SOUS TOUS LES ANGLES</h2>
 				<p class="subtitle1">Style futuriste</p>
 				<p class="text1">La <strong>BMW i3</strong> ne suit aucune tendance, elle est l'expression d'un style de vie assumé. Son langage stylistique futuriste lui confère également de la clarté à l'extérieur et une ambiance "lounge" à l'intérieur.</p>
 				<p class="text1">Aménagée sous le signe de la légèreté, elle se démarque par l'emploi de matériaux durables et par une foison de détails fonctionnels. Une voiture novatrice qui mise sur l'individualité.</p>
 			</div>
-			<img class="image"src="images/section1_image.jpeg" alt="image of BMW i3: front view/ vue avant de BMW i3"/>
+			<img class="image" src="images/section1_image.jpeg" alt="image of BMW i3: front view/ vue avant de BMW i3"/>
 	    </section>
 	    <aside class="aside1"></aside>
 	    <section>
@@ -44,7 +45,7 @@
 	    <aside class="aside2"></aside>
 	    <section>
 			<div class="section3">
-				<p class="title3">CONÇUE POUR L'EMOTION</p>
+				<h2>CONÇUE POUR L'EMOTION</h2>
 				<p class="subtitle3">Matériaux exclusifs</p>
 				<p class="text3">Chaque détail impressionne : alors qu'à l'extérieur, ce sont des peintures exceptionnelles qui mettent en valeur l'allure de la nouvelle <strong>BMW Série 8 Coupé</strong>, à l'intérieur, ce sont des matériaux luxueux associés à des surpiqûres contrastées élégantes et des éléments décoratifs.</p>
 			</div>
@@ -64,12 +65,12 @@
 				<input type="email" name="EMAIL" id="mce-EMAIL" class="input-field" required placeholder="Email*"/>
 				<input type="text" name="LNAME" id="mce-LNAME" class="input-field" required placeholder="Nom*"/>
 				<input type="text" name="TEXT" id="mce-FNAME" class="input-field" required placeholder="Prénom*"/>
-				<input pattern="0[1-9][0-9]{8}" type="text" name="TNUMBER" id="mce-TNUMBER" class="input-field" required placeholder="Téléphone*"/>
-				<input pattern="[0-9]{5}" type="text" name="POSTCODE" id="mce-POSTCODE" class="input-field" required placeholder="Code Postal*"/>
+				<input pattern="0[1-9][0-9]{8}" type="tel" minlength="10" maxlength="10" name="TNUMBER" id="mce-TNUMBER" class="input-field" required placeholder="Téléphone*"/>
+				<input pattern="[0-9]{5}" type="text" minlength="5" maxlength="5" name="POSTCODE" id="mce-POSTCODE" class="input-field" required placeholder="Code Postal*"/>
 				<p>*Champs obligatoires</p>		
 				<div class="content_gdprLegal">
-        			<p><input name="checkbox" type="checkbox" checked>J'accèpte l'utilisation de Mailchimp pour transférer mes données.
-        				<a href="https://mailchimp.com/legal/" target="_blank">Voir la politique de confidentialité de Mailchimp.</a>
+        			<p><input name="checkbox" type="checkbox">J'accèpte l'utilisation de Mailchimp pour transférer mes données.
+        				<a href="https://mailchimp.com/legal/" title="la politique de confidentialité de Mailchimp" target="_blank">Voir la politique de confidentialité de Mailchimp.</a>
         			</p>
  			    </div>
 				<button id="submit">Réservez mon essai</button>
@@ -78,30 +79,30 @@
 		<footer id="footer">
 			<div class="element">
 				<h2>Univers MCAR</h2>
-				<a href="">MCAR Newsletter</a>
-				<a href="">MCAR Group</a>
-				<a href="https://www.bmw.fr/fr/footer/footer-section/certification-iso-9001.html" target="_blank">Certification ISO 9001</a>
-				<a href="https://communaute.bmw.fr/t5/Communaut%C3%A9-BMW-France/ct-p/17" target="_blank">FAQ</a>
-				<a href="https://www.bmw.fr/fr/topics/univers/carriere/le-groupe-bmw-en-france.html" target="_blank">Carrières</a>
+				<a href="" title="MCAR Newsletter">MCAR Newsletter</a>
+				<a href="" title="MCAR Group">MCAR Group</a>
+				<a href="https://www.bmw.fr/fr/footer/footer-section/certification-iso-9001.html" title="Certification ISO 9001" target="_blank">Certification ISO 9001</a>
+				<a href="https://communaute.bmw.fr/t5/Communaut%C3%A9-BMW-France/ct-p/17" title="FAQ" target="_blank">FAQ</a>
+				<a href="https://www.bmw.fr/fr/topics/univers/carriere/le-groupe-bmw-en-france.html" title="Carrières" target="_blank">Carrières</a>
 			</div>
 			<div class="element">
 				<p>Conditions générales d'utilisation</p>
-				<a href="https://www.bmw.fr/fr/footer/footer-section/cookie-policy.html" target="_blank">Cookies</a>
-				<a href="https://www.bmw.fr/fr/topics/univers/technologies-bmw/consommation-emissions.html" target="_blank">Consommations et émissions</a>
-				<a href="https://www.bmw.fr/fr/footer/footer-section/mentions-legales.html" target="_blank">Mentions légales</a>
-				<a href="">Conditions générles d'achat</a>
-				<a href="https://www.bmw.fr/fr/footer/metanavigation/data-privacy.html" target="_blank">Protection des données</a>	
+				<a href="https://www.bmw.fr/fr/footer/footer-section/cookie-policy.html" title="Cookies" target="_blank">Cookies</a>
+				<a href="https://www.bmw.fr/fr/topics/univers/technologies-bmw/consommation-emissions.html" title="Consommations et émissions" target="_blank">Consommations et émissions</a>
+				<a href="https://www.bmw.fr/fr/footer/footer-section/mentions-legales.html" title="Mentions légales" target="_blank">Mentions légales</a>
+				<a href="" title="Conditions générales d'achat">Conditions générales d'achat</a>
+				<a href="https://www.bmw.fr/fr/footer/metanavigation/data-privacy.html" title="Protection des données" target="_blank">Protection des données</a>	
 			</div>
 			<div class="element">
 				<p>Rejoignez-nous</p>
 				<div class="image">
-					<a href="https://www.instagram.com/bmwfrance/" target="_blank">
+					<a href="https://www.instagram.com/bmwfrance/" title="Instagram" target="_blank">
 						<img src="images/footer_logo1.jpeg" alt="logo of/de instagram"/>
 					</a>
-					<a href="https://fr.linkedin.com/showcase/bmwfrance" target="_blank">
+					<a href="https://fr.linkedin.com/showcase/bmwfrance" title="LinkedIn" target="_blank">
 						<img src="images/footer_logo2.jpeg" alt="logo of/de linkedIn"/>
 					</a>
-					<a href="https://twitter.com/BMWFrance" target="_blank">
+					<a href="https://twitter.com/BMWFrance" title="Twitter" target="_blank">
 						<img src="images/footer_logo3.jpeg" alt="logo of/de twitter"/>
 					</a>
 				</div>

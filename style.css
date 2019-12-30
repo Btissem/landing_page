@@ -1,11 +1,11 @@
 body {
-	width: 100%;
 	margin: 0;
 }
-/* header */
+/* ------------------------------------------------- header -------------------------------------------- */
 header {
 	background: url("images/header_background.jpeg");
-	height: auto;
+	height: 100vh;
+	background-position: 50%;
 	background-size: cover;
 }
 header .logo1 {
@@ -14,7 +14,7 @@ header .logo1 {
 	width: 120px;
 }
 header p {
-	margin: 270px 0 0 70px;
+	margin: 130px 0 0 70px;
 	font-family: 'Playfair Display', serif;
 	font-size: 78px;
 	font-weight: bold;
@@ -23,37 +23,51 @@ header p {
 	line-height: 75px;
 }
 header h1 {
-	margin: 0 0 200px 70px;
+	margin: 0 0 110px 70px;
 	font-family: 'Playfair Display', serif;
 	font-size: 57px;
 	font-weight: normal;
 	color: white;
 }
 .header_logo2 {
-	width: 220px;
-	height: 55px;
+	position: fixed;
+	bottom: 0;
 	border: 1px solid white;
 	background-color: white;
 	margin-left: 79%;
 }
 .header_logo2 img {
-	width: 18%;
+	width: 17%;
 	padding-top: 7px;
 	padding-left: 7px;
 }
 header span {
-	font-size: 20px;
+	font-size: 1.1em;
 	color: black;
 	padding-top: 15px;
-	padding-right: 17px;
+	padding-right: 1em;
 }
-/* section1 section2 */
+/* ----------------------------------------------- section1 section2 ------------------------------------ */
+section {
+	display: flex;
+}
+.section1, .section2 {
+    width: 40%;
+    margin: auto;
+}
+img {
+	width: 50%;
+}
+h2 {
+	font-family: 'Playfair Display',serif;
+	font-size: 40px;
+	margin: 0;
+	line-height: 45px;
+	font-weight: normal;
+}
 p {
 	font-family: 'Lato', sans-serif;
     font-size: 20px;	
-}
-.section1 {
-	margin: 50px 82px;
 }
 .text1 {
 	line-height: 25px;
@@ -61,28 +75,12 @@ p {
 .text1 strong {
 	font-weight: normal;
 }
-.section1, img {
-	width: 50%
-}
-section {
-	display: flex;
-}
-.title1 {
-	font-family: 'Playfair Display',serif;
-	font-size: 40px;
-	margin: 0;
-	line-height: 45px;
-}
 .subtitle1 {
 	font-family: 'Playfair Display',serif;
 	margin-top: 0;
 	font-size: 17px;
 	padding-top: 10px;
 	padding-bottom: 20px;
-}
-.section2 {
-    margin: 4%;
-    width: 50%;
 }
 .section2, span {
     float: right;
@@ -92,8 +90,8 @@ hr {
     margin-top: 3px;
     margin-bottom: 3px;
  }
- /* section 3 */
- .section3 {
+ /* ---------------------------------------------------- section3 -----------------------------------  */
+.section3 {
     width: 50%;	
 }
 .photos {
@@ -104,7 +102,7 @@ hr {
 .photo:hover {
 	opacity: 0.5;
 }
-.title3 {
+.section3 h2 {
 	font-family: 'Playfair Display',serif;
 	font-size: 40px;
 	line-height: 45px;
@@ -113,7 +111,7 @@ hr {
 	margin-left: 60px;
 	margin-bottom: 0;
 }
-.subtitle3{
+.subtitle3 {
 	font-family: 'Playfair Display',serif;
 	margin-top: 0;
 	font-size: 17px;
@@ -122,7 +120,7 @@ hr {
 	margin-left: 60px;
 }
 .text3{
-	width: 73%;
+	width: 75%;
 	margin-left: 60px;
 	margin-bottom: 0;
 	padding-bottom: 20px;
@@ -131,11 +129,11 @@ hr {
 .text3 strong {
 	font-weight: normal;
 }
-/* section4 */
+/* ----------------------------------------------------- section4 -------------------------------------- */
 #section4 {
 	display: block;
 	height: auto;
-	background: url(images/section4_background.jpeg);
+	background: url("images/section4_background.jpeg");
 	background-size: cover;
 	padding-left: 80px;
 }
@@ -193,7 +191,7 @@ button {
 	padding-bottom: 20px;
 	width: 415px;
 }
-/* footer */
+/* ---------------------------------------------------------- footer ------------------------------------ */
 #footer {
 	display: flex;
 	background-color: black;
@@ -268,6 +266,9 @@ button {
 		font-size: 45px;
 		line-height: 50px;	
 	}
+	header span {
+		font-size: 15px;
+	}
 	.header_logo2 {
 		margin: auto;
 	}
@@ -282,9 +283,15 @@ button {
 	.section2 p {
 		font-size: 19px;
 	}
-	.section3 p {
+	.section3 h2 {
 		width: 100%;
 		margin: 0;
+	}
+	.section3 p {
+		margin: 0;
+	}
+	.text3 {
+		width: 100%;
 	}
 	#section4 {
 		padding: 5%;
@@ -323,11 +330,11 @@ button {
 	}
 	.aside2 {
 		width: 100%;
-		height: 300px;
-		background: url("images/section3_image2.jpeg"), url("images/section3_image3.jpeg"), url("images/section3_image4.jpeg");
-		background-size: 34%;
+		height: 400px;
+		background: url("images/section3_image3.jpeg"), url("images/section3_image2.jpeg");
+		background-size: 51%;
 		background-repeat: no-repeat, no-repeat, no-repeat;
-		background-position: left, center, right;
+		background-position: left, right;
 	}
 	#footer {
 		display: flex;
@@ -348,19 +355,22 @@ button {
 		border-bottom: 2px solid gray;
 	}
 	header p {
-		margin: 0 0 0 20%;
-		font-size: 40px;
-		line-height: 40px;
-	}
-	header h1 {
-		margin: 0 0 50% 20%;
 		font-size: 35px;
 		line-height: 40px;
 	}
+	header h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	header span {
+		font-size: 15px;
+	}
 	header .logo1 {
-		margin: 0;
-		float: left;
-		width: 100px;
+		width: 80px;
+		margin-bottom: 50px;
+	}
+	.header_logo2 {
+		border: 1px solid black;
 	}
 	.aside1 {
 		height: 200px;
@@ -371,10 +381,11 @@ button {
 	#section4 {
 		padding: 5%;
 	}
+	.input-field {
+		width: 315px;
+	}
 	#footer {
 		display: block;
-		padding: 0;
-		padding-left: 27%;
 	}
 	#footer .element {
 		width: 100%;
