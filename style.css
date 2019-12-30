@@ -32,6 +32,11 @@ header h1 {
 .header_logo2 {
 	position: fixed;
 	bottom: 0;
+<<<<<<< HEAD
+=======
+	width: 220px;
+	height: 55px;
+>>>>>>> d0d05fe89a0a028660268dda0ff1324b28b5e109
 	border: 1px solid white;
 	background-color: white;
 	margin-left: 79%;
